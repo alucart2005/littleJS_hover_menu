@@ -109,7 +109,7 @@ body{
         }
         .text{
           position: relative;
-          padding: 0 10px;
+          padding: 0 15px;
           height: 60px;
           display: flex;
           align-items: center;
@@ -122,7 +122,36 @@ body{
       }
     }
   }
-  &.open .menuToggle::before{
-    transform: translateY(0px) rotate(45deg);
+  &.open{
+    width: 250px;
+    .menuToggle::before{
+      transform: translateY(0px) rotate(45deg);
+      height: 3px;
+      border-radius: 3px;
+    }
+    .menuToggle::after{
+      transform: translateY(0px) rotate(-45deg);
+      height: 3px;
+      border-radius: 3px;
+      box-shadow: 0 0 0 ;
+    }
+    .active{
+      transform: translateX(10px);
+    } 
+    ul li{
+      a .text{
+        opacity: 1;
+        visibility: visible;
+      }
+      /*a .icon{
+        &::before{
+          opacity: 0.3;
+        }
+      }*/
+    }
   }
+
+
+
+
 }

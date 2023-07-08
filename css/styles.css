@@ -113,7 +113,7 @@ body {
 }
 .navigation ul li a .text {
   position: relative;
-  padding: 0 10px;
+  padding: 0 15px;
   height: 60px;
   display: flex;
   align-items: center;
@@ -122,6 +122,31 @@ body {
   visibility: hidden;
   transition: 0.5s;
 }
+.navigation.open {
+  width: 250px;
+}
 .navigation.open .menuToggle::before {
   transform: translateY(0px) rotate(45deg);
+  height: 3px;
+  border-radius: 3px;
+}
+.navigation.open .menuToggle::after {
+  transform: translateY(0px) rotate(-45deg);
+  height: 3px;
+  border-radius: 3px;
+  box-shadow: 0 0 0;
+}
+.navigation.open .active {
+  transform: translateX(10px);
+}
+.navigation.open ul li {
+  /*a .icon{
+    &::before{
+      opacity: 0.3;
+    }
+  }*/
+}
+.navigation.open ul li a .text {
+  opacity: 1;
+  visibility: visible;
 }/*# sourceMappingURL=styles.css.map */
