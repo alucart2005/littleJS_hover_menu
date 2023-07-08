@@ -122,4 +122,7 @@ body{
       }
     }
   }
+  &.open .menuToggle::before{
+    transform: translateY(0px) rotate(45deg);
+  }
 }

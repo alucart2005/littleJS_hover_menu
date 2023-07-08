@@ -121,4 +121,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
+}
+.navigation.open .menuToggle::before {
+  transform: translateY(0px) rotate(45deg);
 }/*# sourceMappingURL=styles.css.map */
