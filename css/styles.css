@@ -139,14 +139,10 @@ body {
 .navigation.open .active {
   transform: translateX(10px);
 }
-.navigation.open ul li {
-  /*a .icon{
-    &::before{
-      opacity: 0.3;
-    }
-  }*/
-}
 .navigation.open ul li a .text {
   opacity: 1;
   visibility: visible;
+}
+.navigation.open ul li a .icon::before {
+  opacity: 0.2;
 }/*# sourceMappingURL=styles.css.map */
